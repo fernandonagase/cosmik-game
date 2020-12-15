@@ -20,6 +20,7 @@ public class PlayerBehaviour : MonoBehaviour, IShooterShip, IDamageable, IDestru
             _firespot.transform.position,
             transform.rotation
         );
+        GetComponent<PlayerAudioController>().PlayShoot();
     }
 
     public void TakeDamage()
