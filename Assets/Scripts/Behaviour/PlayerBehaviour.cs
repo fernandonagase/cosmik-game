@@ -24,7 +24,9 @@ public class PlayerBehaviour : MonoBehaviour, IShooterShip, IDamageable, IDestru
 
     public void TakeDamage()
     {
-        if (--_health <= 0)
+        _health--;
+        GameManager.GetGameManager().UpdateUIHealth((int)_health);
+        if (_health <= 0)
         {
             DestroySelf();   
         }
