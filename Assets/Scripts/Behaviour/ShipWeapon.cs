@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ShipWeapon : MonoBehaviour
 {
-    protected const float SHOOT_CLOCK = 1f;
+    [SerializeField] protected float shootClock = 1f;
 
     protected float _elapsedTime;
     private IShooterShip _shooterShip;
@@ -22,10 +22,10 @@ public class ShipWeapon : MonoBehaviour
     private void FixedUpdate()
     {
         _elapsedTime += Time.deltaTime;
-        if (_elapsedTime >= SHOOT_CLOCK)
+        if (_elapsedTime >= shootClock)
         {
             _shooterShip.Shoot();
-            _elapsedTime -= SHOOT_CLOCK;
+            _elapsedTime -= shootClock;
         }
     }
 }
