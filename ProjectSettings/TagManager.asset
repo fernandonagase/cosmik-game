@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerFirespot
   - Enemy
+  - DescendingEnemyFirespot
   layers:
   - Default
   - TransparentFX

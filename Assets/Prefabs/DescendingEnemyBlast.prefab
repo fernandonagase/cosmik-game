@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5472543899036840482}
   - component: {fileID: -5532093386715579685}
   - component: {fileID: -6330246123766991780}
-  - component: {fileID: 8507088833549647689}
+  - component: {fileID: 7892086843271128461}
   m_Layer: 0
-  m_Name: PlayerBlast
+  m_Name: DescendingEnemyBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.04
---- !u!114 &8507088833549647689
+--- !u!114 &7892086843271128461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,6 +130,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4100098070290857708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1178f5d465f9fa74aba242b64a60439b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2634e139163cb094a800286f27b8e14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

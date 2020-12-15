@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1983780188678631971}
   m_Layer: 0
-  m_Name: PlayerFirespot
-  m_TagString: Untagged
+  m_Name: DescendingEnemyFirespot
+  m_TagString: DescendingEnemyFirespot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6998104482585466995}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: -1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2865624719342550296}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360}
 --- !u!1 &8045272239125838273
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 403150595}
   - component: {fileID: 403150596}
   - component: {fileID: 8882335021292658519}
+  - component: {fileID: -3515073466857602538}
   m_Layer: 0
   m_Name: DescendingEnemy
   m_TagString: Enemy
@@ -177,5 +178,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3cb952bb6c72e342bd97b5792b85af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blastPrefab: {fileID: 4100098070290857708, guid: 3db93f10296fa584a81390ce5a0d6dd2,
+    type: 3}
+--- !u!114 &-3515073466857602538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045272239125838273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bf4cb651b402f43afd24b2263ce3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
