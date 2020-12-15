@@ -11,6 +11,7 @@ public class PlayerBlastBehaviour : BlastBehaviour
             if (damageable != null)
             {
                 damageable.TakeDamage();
+                GameManager.GetGameManager().IncrementScore(100);
             }
         }
     }
