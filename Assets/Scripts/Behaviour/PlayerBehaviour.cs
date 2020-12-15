@@ -1,11 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerBehaviour : MonoBehaviour
+public class PlayerBehaviour : MonoBehaviour, IShooterShip
 {
-    private float SHOOT_CLOCK = 1f;
-
-    private float _elapsedTime;
-
     private GameObject _firespot;
     [SerializeField]
     private GameObject _blastPrefab = null;
@@ -15,17 +11,7 @@ public class PlayerBehaviour : MonoBehaviour
         _firespot = GameObject.FindWithTag("PlayerFirespot");
     }
 
-    private void FixedUpdate()
-    {
-        _elapsedTime += Time.deltaTime;
-        if (_elapsedTime >= SHOOT_CLOCK)
-        {
-            Shoot();
-            _elapsedTime -= SHOOT_CLOCK;
-        }
-    }
-
-    private void Shoot()
+    public void Shoot()
     {
         GameObject newBlast = Instantiate(
             _blastPrefab,
