@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public void IncrementScore(int score)
     {
         Score += score;
+        _uiManager.UpdateScore(Score);
     }
 
     public void UpdateUIHealth(int health)
