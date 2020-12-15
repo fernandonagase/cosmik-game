@@ -24,7 +24,7 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
         transform.position += Vector3.down * SPEED * Time.deltaTime;
     }
 
-    public override void Destroy()
+    public override void DestroySelf()
     {
         Destroy(gameObject);
     }
@@ -33,7 +33,7 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
     {
         if (--health <= 0)
         {
-            Destroy();
+            DestroySelf();
         }
     }
 

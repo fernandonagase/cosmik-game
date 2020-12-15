@@ -1,4 +1,4 @@
 ﻿public interface IDestructable
 {
-    void Destroy();
+    void DestroySelf();
 }
