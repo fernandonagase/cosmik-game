@@ -3,7 +3,6 @@
 public class PlayerBehaviour : MonoBehaviour
 {
     private float SHOOT_CLOCK = 1f;
-    private float BLAST_FORCE = 256f;
 
     private float _elapsedTime;
 
@@ -33,9 +32,5 @@ public class PlayerBehaviour : MonoBehaviour
             _firespot.transform.position,
             transform.rotation
         );
-        newBlast.GetComponent<Rigidbody2D>()
-            .AddForce(Vector2.up * BLAST_FORCE);
-
-        Destroy(newBlast, 5);
     }
 }
