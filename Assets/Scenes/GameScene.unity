@@ -211,6 +211,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7479348224598883278, guid: c20762e0a83417648bc5c173fff29f25,
+        type: 3}
+      propertyPath: _blastPrefab
+      value: 
+      objectReference: {fileID: 4100098070290857708, guid: c614bf07f8b0f714cbce438c56acdb17,
+        type: 3}
     - target: {fileID: 2865624719342550296, guid: c20762e0a83417648bc5c173fff29f25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -265,6 +271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998104482585466995, guid: c20762e0a83417648bc5c173fff29f25,
+        type: 3}
+      propertyPath: m_TagString
+      value: PlayerFirespot
       objectReference: {fileID: 0}
     - target: {fileID: 8045272239125838273, guid: c20762e0a83417648bc5c173fff29f25,
         type: 3}
