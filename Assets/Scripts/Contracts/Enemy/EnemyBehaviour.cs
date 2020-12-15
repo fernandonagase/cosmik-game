@@ -1,14 +1,9 @@
 ﻿using UnityEngine;
 
-public abstract class EnemyBehaviour : MonoBehaviour
+public abstract class EnemyBehaviour : MonoBehaviour, IDamageable, IDestructable
 {
-    void Start()
-    {
-        
-    }
+    protected float health = 1;
 
-    void Update()
-    {
-        
-    }
+    public abstract void TakeDamage();
+    public abstract void Destroy();
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DescendingEnemyBehaviour : EnemyBehaviour
 {
@@ -9,5 +7,18 @@ public class DescendingEnemyBehaviour : EnemyBehaviour
     void Update()
     {
         transform.position += Vector3.down * SPEED * Time.deltaTime;
+    }
+
+    public override void Destroy()
+    {
+        Destroy(gameObject);
+    }
+
+    public override void TakeDamage()
+    {
+        if (--health <= 0)
+        {
+            Destroy();
+        }
     }
 }
