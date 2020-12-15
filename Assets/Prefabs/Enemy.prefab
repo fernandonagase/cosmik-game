@@ -42,10 +42,8 @@ GameObject:
   - component: {fileID: 316140216291860646}
   - component: {fileID: 403150595}
   - component: {fileID: 403150596}
-  - component: {fileID: -7479348224598883278}
-  - component: {fileID: -2168462907600054113}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,14 +56,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8045272239125838273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1983780188678631971}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &316140216291860646
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -106,7 +104,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 220fa9bbf20ad9148a31070914765715, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -168,29 +166,3 @@ PolygonCollider2D:
       - {x: 0.25, y: -0.25}
       - {x: 0.19776773, y: -0.0625}
       - {x: 0.051014468, y: 0.25474843}
---- !u!114 &-7479348224598883278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8045272239125838273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ab640efbcd7704c8ad0b2c342d79cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _blastPrefab: {fileID: 4100098070290857708, guid: c614bf07f8b0f714cbce438c56acdb17,
-    type: 3}
---- !u!114 &-2168462907600054113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8045272239125838273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55fb97249d2c30747b336b4e153dac5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
