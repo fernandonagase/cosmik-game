@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1983780188678631971}
   m_Layer: 0
   m_Name: PlayerFirespot
-  m_TagString: Untagged
+  m_TagString: PlayerFirespot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,9 +44,11 @@ GameObject:
   - component: {fileID: 403150596}
   - component: {fileID: -7479348224598883278}
   - component: {fileID: -2168462907600054113}
+  - component: {fileID: 3925291260484100624}
+  - component: {fileID: 403150601}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,3 +196,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fb97249d2c30747b336b4e153dac5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3925291260484100624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045272239125838273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91195cc0a28cb04e88bdc1982f1f471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootSfx: {fileID: 8300000, guid: 94cb1c0889e3e0347ab9a0aa526b0fd0, type: 3}
+  _audioSource: {fileID: 0}
+--- !u!114 &403150601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045272239125838273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09bf4cb651b402f43afd24b2263ce3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootClock: 1

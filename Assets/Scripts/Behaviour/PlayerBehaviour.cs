@@ -71,5 +71,6 @@ public class PlayerBehaviour : MonoBehaviour, IShooterShip, IDamageable, IDestru
     public void DestroySelf()
     {
         Destroy(gameObject);
+        GameManager.GetGameManager().FinishGame();
     }
 }

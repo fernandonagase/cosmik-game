@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
             .GetComponent<GameManager>();
     }
 
+    public void FinishGame()
+    {
+        _uiManager.DisplayGameOverScreen(Score);
+    }
+
     public void IncrementScore(int score)
     {
         Score += score;
