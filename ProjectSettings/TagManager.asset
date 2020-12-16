@@ -9,6 +9,7 @@ TagManager:
   - DescendingEnemyFirespot
   - GameManager
   - HUD
+  - EnemySpawner
   layers:
   - Default
   - TransparentFX

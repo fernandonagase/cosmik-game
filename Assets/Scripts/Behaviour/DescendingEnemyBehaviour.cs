@@ -26,6 +26,10 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
 
     public override void DestroySelf()
     {
+        GameObject
+            .FindWithTag("EnemySpawner")
+            .GetComponent<EnemySpawner>()
+            .RemoveFromList(gameObject);
         Destroy(gameObject);
     }
 

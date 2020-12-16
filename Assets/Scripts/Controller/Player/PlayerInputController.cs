@@ -16,5 +16,9 @@ public class PlayerInputController : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             transform.position = (Vector2)_mainCam.ScreenToWorldPoint(touch.position);
         }
+        else if(Input.touchCount == 2)
+        {
+            GetComponent<PlayerBehaviour>().SpecialAttack();
+        }
     }
 }
