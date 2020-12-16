@@ -6,6 +6,8 @@ public class EnemySpawner : BaseSpawner
     [SerializeField] private GameObject _enemyPrefab = null;
     private Camera _mainCam;
 
+    private float _minSpawnClock = 0.8f;
+
     private Vector3 _lowerLeftLimit;
     private Vector3 _upperRightLimit;
     private List<GameObject> enemiesSpawned = new List<GameObject>();
@@ -17,6 +19,15 @@ public class EnemySpawner : BaseSpawner
         _mainCam = Camera.main;
         _lowerLeftLimit = _mainCam.ScreenToWorldPoint(Vector3.zero);
         _upperRightLimit = _mainCam.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+    }
+
+    private new void Update()
+    {
+        base.Update();
+        if (spawnClock > _minSpawnClock)
+        {
+            spawnClock -= 0.001f * Time.deltaTime;
+        }
     }
 
     protected override void Spawn()

@@ -5,7 +5,7 @@ public abstract class BaseSpawner : MonoBehaviour
     protected float spawnClock;
     protected float elapsedTime;
 
-    void Update()
+    protected void Update()
     {
         elapsedTime += Time.deltaTime;
         if (elapsedTime >= spawnClock)
