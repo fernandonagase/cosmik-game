@@ -30,6 +30,15 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
         transform.position += Vector3.down * SPEED * Time.deltaTime;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.GetComponent<IDamageable>().TakeDamage();
+            TakeDamage();
+        }
+    }
+
     private void CheckLowerBoundary()
     {
         if (transform.position.y < _lowerLeftCorner.y)
