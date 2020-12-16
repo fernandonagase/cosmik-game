@@ -26,7 +26,7 @@ public class EnemySpawner : BaseSpawner
         base.Update();
         if (spawnClock > _minSpawnClock)
         {
-            spawnClock -= 0.001f * Time.deltaTime;
+            spawnClock -= 0.01f * Time.deltaTime;
         }
     }
 
