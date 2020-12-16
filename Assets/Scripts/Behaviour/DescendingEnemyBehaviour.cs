@@ -6,9 +6,14 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
 
     private GameObject _firespot;
     [SerializeField] private GameObject _blastPrefab = null;
+    private Camera _mainCam;
+
+    private Vector3 _lowerLeftCorner;
 
     private void Start()
     {
+        _mainCam = Camera.main;
+        _lowerLeftCorner = _mainCam.ScreenToWorldPoint(Vector3.zero);
         for (int i = 0; i < transform.childCount; ++i)
         {
             if (transform.GetChild(i).gameObject.CompareTag("DescendingEnemyFirespot"))
@@ -21,7 +26,16 @@ public class DescendingEnemyBehaviour : EnemyBehaviour, IShooterShip
 
     void Update()
     {
+        CheckLowerBoundary();
         transform.position += Vector3.down * SPEED * Time.deltaTime;
+    }
+
+    private void CheckLowerBoundary()
+    {
+        if (transform.position.y < _lowerLeftCorner.y)
+        {
+            DestroySelf();
+        }
     }
 
     public override void DestroySelf()
